@@ -257,7 +257,7 @@ img {
     border-radius: 4px;
 }
     .services-btn:focus {
-        border: 1px solid blue;
+        border: 1px solid var(--brand-color);
     }
 .description-list {
     display: flex;
