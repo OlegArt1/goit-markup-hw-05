@@ -154,10 +154,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     color: var(--black-color);
 }
     .header-menu-link:hover, .header-menu-link:focus {
@@ -170,7 +167,7 @@ img {
     display: flex;
     align-items: center;
 }
-    .header-menu-link:hover::after, .header-contact-menu-link:hover::after {
+    [id*="index"]::after {
         content: '';
         position: absolute;
         left: 0;
@@ -180,7 +177,7 @@ img {
         border-radius: 2px;
         background-color: var(--brand-color);
     }
-    .header-menu-link:focus::after, .header-contact-menu-link:focus::after {
+    [id*="portfolio"]::after {
         content: '';
         position: absolute;
         left: 0;
@@ -195,7 +192,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     color: var(--gray-color);
 }
     .header-contact-menu-link:hover .header-contact-menu {
@@ -208,7 +205,7 @@ img {
     }
 .header-contact-icon {
     margin-right: 10px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     fill: var(--gray-color);
 }
     .header-contact-menu-link:hover .header-contact-icon {
@@ -393,7 +390,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--social-icon-color);
     border-radius: 50%;
 }
@@ -427,10 +424,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 250ms;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     border: 1px solid var(--social-icon-color);
     fill: var(--social-icon-color);
     border-radius: 4px;
@@ -445,9 +439,6 @@ img {
     .group-link:focus .group-social-icon {
         fill: var(--brand-color);
     }
-.group-social-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 .button-list {
     margin-bottom: 50px;
     display: flex;
@@ -466,7 +457,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     border-radius: 4px;
     border: 1px solid var(--light-gray-color);
     background-color: var(--light-gray-color);
@@ -496,10 +487,7 @@ img {
     display: inline-block;
     align-items: center;
     justify-content: center;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 250ms;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     border-left: 1px solid var(--border-white-color);
     border-right: 1px solid var(--border-white-color);
     border-bottom: 1px solid var(--border-white-color);
@@ -630,7 +618,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     background-color: var(--fon-social-icon-color);
     fill: var(--white-color);
     border-radius: 50%;
