@@ -147,6 +147,7 @@ img {
         transform: translateY(2px);
     }
 .header-menu-link {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     display: inline-block;
